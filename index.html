@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joshua Alguno's personal portfolio website.">
+  <meta name="theme-color" content="#101010">
+  <title>Joshua Alguno | Student Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Joshua Alguno home">JA<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        type="button" aria-label="Open navigation menu"
+        aria-controls="primaryNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-contact" href="#contact">Contact ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> INFORMATION TECHNOLOGY STUDENT</p>
+
+        <h1>Building my skills.<br>
+          <span>One project at a time.</span>
+        </h1>
+
+        <p class="hero-description">
+          Hi, I'm <strong>Joshua Alguno</strong>. I'm an IT student learning
+          how to turn ideas into useful digital experiences through web
+          development, academic projects, and hands-on practice.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-yellow" href="#projects">Explore my work ↘</a>
+          <a class="button button-outline" href="#about">More about me</a>
+        </div>
+
+        <div class="hero-meta">
+          <div><span class="meta-number">IT</span><span class="meta-label">My field</span></div>
+          <div><span class="meta-number">WEB & GAME DEV</span><span class="meta-label">What I'm learning</span></div>
+          <div><span class="meta-number">BUILD,PRACTICE,APPLY</span><span class="meta-label">How I improve</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img
+            src="image/profile.jpg"
+            alt="Portrait of Joshua Alguno"
+            class="profile-photo"
+            onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+
+          <div class="photo-placeholder" hidden>
+            <span class="placeholder-initials">JA</span>
+            <span>Add your photo to the image folder</span>
+          </div>
+
+          <div class="photo-label">✳ STUDENT · DEVELOPER</div>
+        </div>
+
+        <div class="decor decor-one" aria-hidden="true"></div>
+        <div class="decor decor-two" aria-hidden="true"></div>
+        <div class="floating-note">✦ Always learning</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section-shell section-block" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+        <h2>More about <span>me.</span></h2>
+        <p>Who I am, what interests me, and where I want to grow.</p>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-marker">01<span>/</span></div>
+
+        <div class="about-content">
+          <h3>Curious by nature. Learning by doing.</h3>
+          <p>
+            I am an Information Technology student who enjoys exploring
+            technology, learning new skills, and working on practical projects.
+            My academic experience helps me develop my technical abilities,
+            problem-solving, creativity, and teamwork.
+          </p>
+          <p>
+            I see each project as an opportunity to improve. My goal is to keep
+            building my knowledge and use technology to create useful solutions.
+          </p>
+
+          <div class="personal-details">
+            <div>
+              <span class="detail-label">FULL NAME</span>
+              <span>Joshua Alguno</span>
+            </div>
+            <div>
+              <span class="detail-label">COURSE</span>
+              <span>BS in Information Technology</span>
+            </div>
+            <div>
+              <span class="detail-label">INTERESTS</span>
+              <span>Technology, design, and learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section-shell section-block" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">TOOLS I'M EXPLORING</p>
+        <h2>Skills & <span>technologies.</span></h2>
+        <p>Technologies I have been learning and practicing.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-top">
+            <span class="skill-symbol">&lt;/&gt;</span>
+            <span class="skill-index">01</span>
+          </div>
+          <h3>HTML</h3>
+          <p>Structuring pages with clear, meaningful markup.</p>
+          <span class="skill-category">WEB STRUCTURE</span>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-top">
+            <span class="skill-symbol">✳</span>
+            <span class="skill-index">02</span>
+          </div>
+          <h3>CSS</h3>
+          <p>Styling layouts and making pages adapt to different screens.</p>
+          <span class="skill-category">WEB DESIGN</span>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-top">
+            <span class="skill-symbol">JS</span>
+            <span class="skill-index">03</span>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Practicing the interactions that make websites responsive.</p>
+          <span class="skill-category">INTERACTIVITY</span>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-top">
+            <span class="skill-symbol">Dj</span>
+            <span class="skill-index">04</span>
+          </div>
+          <h3>Django</h3>
+          <p>Learning to build web applications with Python and Django.</p>
+          <span class="skill-category">WEB APPLICATIONS</span>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-top">
+            <span class="skill-symbol">U</span>
+            <span class="skill-index">05</span>
+          </div>
+          <h3>Unity</h3>
+          <p>Learning to create interactive 2D and 3D games using Unity.</p>
+          <span class="skill-category">GAME DEVELOPMENT</span>
+        </article>
+      </div>
+
+      <p class="section-note">
+        These are technologies I am learning and improving through practice.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section-shell section-block" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects I've <span>worked on.</span></h2>
+        <p>Academic work and practice projects from my IT journey.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-art art-portfolio">
+            <div class="mini-browser">
+              <div class="browser-dots"><i></i><i></i><i></i></div>
+              <div class="mini-layout">
+                <div class="mini-line"></div>
+                <div class="mini-line short"></div>
+                <div class="mini-button"></div>
+                <div class="mini-photo"></div>
+              </div>
+            </div>
+            <span class="art-number">PROJECT 01</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-kicker">WEB DEVELOPMENT</div>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A responsive website presenting my background, skills, education,
+              and selected academic work.
+            </p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <p class="project-role">
+              <strong>My contribution:</strong> Personalizing the layout,
+              content, and interactions.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art art-academic">
+            <div class="terminal-card">
+              <span>student@projects:~</span>
+              <b>&gt; learning</b>
+              <b>&gt; configuring</b>
+              <b>&gt; building</b>
+              <i></i>
+            </div>
+            <span class="art-number">PROJECT 02</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-kicker">ACADEMIC ACTIVITIES</div>
+            <h3>IT Lab & Capstone Activities</h3>
+            <p>
+              A simple to-do aplication,
+              bootable USB preparation, AD DS and DNS installation,
+              and an IoT capstone project.
+            </p>
+            <div class="tech-tags">
+              <span>IT Support</span><span>Networking</span><span>IoT</span>
+            </div>
+            <p class="project-role">
+              <strong>My contribution:</strong> Hands-on learning and
+              participation in project development.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art art-academic">
+            <div class="terminal-card">
+              <span>student@projects:~</span>
+              <b>&gt; learning</b>
+              <b>&gt; configuring</b>
+              <b>&gt; building</b>
+              <i></i>
+            </div>
+            <span class="art-number">PROJECT 02</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-kicker">GAME DEVELOPMENT</div>
+            <h3>DJANGO PROJECT, JAVASCRIPT PROJECT, UNITY PROJECT</h3>
+            <p>
+              A simple django game, Hari ng Dama js game and an uncompleted 2d action game. 
+            </p>
+            <div class="tech-tags">
+              <span>Django</span><span>Javascript</span><span>Elective</span>
+            </div>
+            <p class="project-role">
+              <strong>My contribution:</strong> Hands-on learning and
+              participation in project development.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <p class="section-note">
+        
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section-shell section-block" id="education">
+      <div class="section-heading">
+        <p class="eyebrow">MY LEARNING JOURNEY</p>
+        <h2>Education & <span>growth.</span></h2>
+      </div>
+
+      <div class="education-list">
+        <article class="education-item">
+          <div class="education-year">
+            <span class="education-dot"></span>
+            <span>CURRENT</span>
+          </div>
+
+          <div class="education-card">
+            <p class="education-type">UNDERGRADUATE STUDIES</p>
+            <h3>Cebu Eastern College</h3>
+            <p class="education-course">
+              Bachelor of Science in Information Technology · 4th Year
+            </p>
+            <p>
+              Developing academic knowledge and practical skills through
+              coursework, collaboration, and projects.
+            </p>
+          </div>
+        </article>
+
+        <article class="education-item">
+          <div class="education-year">
+            <span class="education-dot"></span>
+            <span>PREVIOUS</span>
+          </div>
+
+          <div class="education-card">
+            <p class="education-type">SENIOR HIGH SCHOOL</p>
+            <h3>Adlaon Integrated School</h3>
+            <p class="education-course">Grades 11–12</p>
+            <p>Built the foundation for my current academic journey.</p>
+          </div>
+        </article>
+        <article class="education-item">
+          <div class="education-year">
+            <span class="education-dot"></span>
+            <span>PREVIOUS</span>
+          </div>
+
+          <div class="education-card">
+            <p class="education-type">JUNIOR HIGH SCHOOL</p>
+            <h3>Tagbao National High Schol</h3>
+            <p class="education-course">Grades 7-10</p>
+            <p>Started my journey to be a meaningful person.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="section-shell contact-inner">
+        <div>
+          <p class="eyebrow">HAVE A QUESTION OR IDEA?</p>
+          <h2>Let's make something <span>meaningful.</span></h2>
+          <p>
+            I'm open to academic collaboration, project discussions,
+            and connecting with fellow learners.
+          </p>
+        </div>
+
+        <a class="button button-yellow contact-button"
+           href="mailto:YOUR_EMAIL@example.com?subject=Portfolio%20Inquiry">
+          Email me ↗
+        </a>
+
+        <p class="contact-email">
+          <a href="mailto:joshuaalgunoko@gmail.com">joshuaalgunoko@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <a class="brand footer-brand" href="#home">JA<span>.</span></a>
+      <p>Designed and built as a personal learning project.</p>
+      <a class="back-top" href="#home">Back to top ↑</a>
+      <span class="copyright">© <span id="year">2026</span> Joshua Alguno</span>
+    </div>
+  </footer>
+</body>
+</html>
