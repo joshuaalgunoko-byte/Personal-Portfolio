@@ -49,7 +49,7 @@ You can customize the website by editing the following files:
 - `index.html` — Update your profile, skills, projects, education, and contact details.
 - `style.css` — Modify colors, fonts, layouts, and animations.
 - `script.js` — Adjust navigation behavior and interactive features.
-- `image/profile.jpg` — Replace the sample profile image with your own photo.
+- `profile.jpg` — Replace the sample profile image with your own photo.
 
 Before publishing, replace any placeholder email address and project information with your actual details.
 
